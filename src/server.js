@@ -23,3 +23,7 @@ connectDB()
         console.error("Failed to connect to MongoDB",error)
     })
 
+
+app.get("/", (req, res) => {
+    res.send("Welcome to Movie API");
+});
